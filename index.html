@@ -1,50 +1,65 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta property="og:title" content="Nanzer Productores y Asesores de Seguros">
-<meta property="og:description" content="Todo lo que necesitás, en un solo lugar.">
-<meta property="og:image" content="https://redesloop.github.io/nanzer-card/img/preview.jpg">
-<meta property="og:image:secure_url" content="https://redesloop.github.io/nanzer-card/img/preview.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:url" content="https://redesloop.github.io/nanzer-card/">
-<meta property="og:type" content="website">
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+html,
+body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:#ffffff;
+}
 
-    <title>Nanzer Card</title>
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 
-    <link rel="stylesheet" href="style.css">
+.contenedor{
+    position:relative;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 
-</head>
+.fondo{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    display:block;
+    pointer-events:none;
+}
 
-<body>
+.btn{
+    position:absolute;
+    left:31.5%;
+    width:36%;
+    height:6%;
+    background:transparent;
+    border-radius:18px;
+    z-index:10;
+    display:block;
+    touch-action:manipulation;
+    -webkit-tap-highlight-color:transparent;
+}
 
-    <div class="contenedor">
+.whatsapp{
+    top:43.8%;
+}
 
-        <img src="img/tarjeta.jpeg" class="fondo">
+.web{
+    top:55.5%;
+}
 
-        <a class="btn whatsapp"
-            href="https://wa.me/543415445791?text=Hola%20%F0%9F%91%8B"
-            target="_blank"></a>
+.instagram{
+    top:67.2%;
+}
 
-        <a class="btn web"
-            href="http://www.nanzerpas.com.ar"
-            target="_blank"></a>
-
-        <a class="btn instagram"
-            href="https://instagram.com/sancristobal.nanzer"
-            target="_blank"></a>
-
-        <a class="btn maps"
-            href="https://www.google.com/maps/place/Nanzer+Productores+de+Seguros/@-32.749759,-60.73433,17z/data=!3m1!4b1!4m6!3m5!1s0x95b65ae53f6c8a7d:0x55db4c4b7b0e9bc2!8m2!3d-32.749759!4d-60.73433!16s%2Fg%2F11b6yq93q2?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D"
-            target="_blank"></a>
-
-    </div>
-
-    <script src="script.js"></script>
-
-</body>
-
-</html>
+.maps{
+    top:79%;
+}
