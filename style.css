@@ -32,6 +32,7 @@ body{
     height:100%;
     object-fit:contain;
     display:block;
+    pointer-events:none;
 }
 
 .btn{
@@ -41,15 +42,14 @@ body{
     height:5.2%;
     background:transparent;
     border-radius:18px;
-    transition: transform .15s ease;
-}
-
-.btn:hover{
-    transform:scale(.97);
+    z-index:10;
+    display:block;
+    touch-action:manipulation;
+    -webkit-tap-highlight-color:transparent;
 }
 
 .whatsapp{
-    top:43,8%;
+    top:43.8%;
 }
 
 .web{

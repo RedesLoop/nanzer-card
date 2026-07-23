@@ -1,65 +1,50 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+<!DOCTYPE html>
+<html lang="es">
 
-html,
-body{
-    width:100%;
-    height:100%;
-    overflow:hidden;
-    background:#ffffff;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-body{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
+    <meta property="og:title" content="Nanzer Productores y Asesores de Seguros">
+    <meta property="og:description" content="Todo lo que necesitás, en un solo lugar.">
+    <meta property="og:image" content="https://redesloop.github.io/nanzer-card/img/preview.jpg">
+    <meta property="og:image:secure_url" content="https://redesloop.github.io/nanzer-card/img/preview.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://redesloop.github.io/nanzer-card/">
+    <meta property="og:type" content="website">
 
-.contenedor{
-    position:relative;
-    width:100vw;
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
+    <title>Nanzer Card</title>
 
-.fondo{
-    width:100%;
-    height:100%;
-    object-fit:contain;
-    display:block;
-    pointer-events:none;
-}
+    <link rel="stylesheet" href="style.css">
+</head>
 
-.btn{
-    position:absolute;
-    left:31.5%;
-    width:36%;
-    height:6%;
-    background:transparent;
-    border-radius:18px;
-    z-index:10;
-    display:block;
-    touch-action:manipulation;
-    -webkit-tap-highlight-color:transparent;
-}
+<body>
 
-.whatsapp{
-    top:43.8%;
-}
+    <div class="contenedor">
 
-.web{
-    top:55.5%;
-}
+        <img src="img/tarjeta.jpeg" class="fondo">
 
-.instagram{
-    top:67.2%;
-}
+        <a class="btn whatsapp"
+           href="https://wa.me/543415445791?text=Hola%20%F0%9F%91%8B"
+           target="_blank"></a>
 
-.maps{
-    top:79%;
-}
+        <a class="btn web"
+           href="https://www.nanzerpas.com.ar"
+           target="_blank"></a>
+
+        <a class="btn instagram"
+           href="https://instagram.com/sancristobal.nanzer"
+           target="_blank"></a>
+
+        <a class="btn maps"
+           href="https://www.google.com/maps/search/?api=1&query=-32.749759,-60.73433"
+           target="_blank"></a>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
