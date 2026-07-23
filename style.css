@@ -8,8 +8,8 @@ html,
 body{
     width:100%;
     height:100%;
-    overflow:hidden;
     background:#ffffff;
+    overflow:hidden;
 }
 
 body{
@@ -20,26 +20,26 @@ body{
 
 .contenedor{
     position:relative;
-    width:100vw;
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+
+    /* Proporción exacta de tarjeta.jpeg: 1310 x 1969 */
+    width:min(100vw, calc(100vh * 1310 / 1969));
+    aspect-ratio:1310 / 1969;
 }
 
 .fondo{
+    position:absolute;
+    inset:0;
     width:100%;
     height:100%;
-    object-fit:contain;
     display:block;
     pointer-events:none;
 }
 
 .btn{
     position:absolute;
-    left:31.5%;
-    width:36%;
-    height:5.2%;
+    left:19%;
+    width:59%;
+    height:8%;
     background:transparent;
     border-radius:18px;
     z-index:10;
@@ -53,13 +53,13 @@ body{
 }
 
 .web{
-    top:55.5%;
+    top:52.5%;
 }
 
 .instagram{
-    top:67.2%;
+    top:61.2%;
 }
 
 .maps{
-    top:79%;
+    top:69.9%;
 }
